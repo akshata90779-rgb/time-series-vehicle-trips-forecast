@@ -4,8 +4,8 @@
 .Rproj.user/
 
 # Data files
-*.csv
-*.xlsx
+vehicle_trips.csv
+.xlsx
 
 # Plots & outputs
 *.png
