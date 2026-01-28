@@ -1,14 +1,33 @@
-# Time Series Forecasting – Vehicle Trips
+# Vehicle Trips Time Series Forecasting
 
-This project applies SARIMA models to forecast vehicle trip volumes
-using weekly seasonal time series data.
+This project focuses on forecasting vehicle trip volumes using
+seasonal time series models (SARIMA).
 
-## Tools Used
-- R
-- forecast package
-- ggplot2
+## Objective
+To model weekly seasonality in vehicle trips and generate short-term
+forecasts with reliable residual diagnostics.
 
-## Model
-- SARIMA(1,0,1)(2,1,0)[7]
+## Dataset
+- Time-stamped vehicle trip counts
+- Weekly seasonality (frequency = 7)
+- Missing values removed during preprocessing
+
+## Methodology
+- Exploratory time series analysis
 - Train-test split
-- Residual diagnostics and Ljung-Box test
+- SARIMA model using auto.arima
+- Forecast evaluation on test set
+- Residual diagnostics (ACF, Ljung-Box test)
+
+## Tools & Technologies
+- R
+- forecast
+- ggplot2
+- tseries
+
+## Key Results
+- Model captures weekly seasonality effectively
+- Residuals behave like white noise
+- Forecast aligns well with test data
+
+
